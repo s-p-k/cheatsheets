@@ -1,0 +1,2 @@
+# if square is defined in ~/.csirc
+echo '(square 2)' | csi | tail -n 2 | head -n 1

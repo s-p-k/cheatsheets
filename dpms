@@ -1,0 +1,2 @@
+# Disable DPMS and prevent screen from blanking
+xset -dpms; xset s off

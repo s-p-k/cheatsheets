@@ -1,0 +1,8 @@
+# list packages that are no longer required as deps(orphans):
+pacman -Qdt
+
+# list official installed packages:
+pacman -Qqn
+
+# list package contents
+pacman -Ql assaultcube | less

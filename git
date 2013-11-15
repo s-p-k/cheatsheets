@@ -1,0 +1,14 @@
+# add all updated files
+git add -u .
+
+# add commit message
+git commit -m "msg"
+
+# create a patch file for the latest changes
+git format-patch -1
+
+# create a new patch file, fixing problems from the previous one
+git commit --ammend
+
+# to avoid conflicts
+git fetch && git reset --hard origin/master

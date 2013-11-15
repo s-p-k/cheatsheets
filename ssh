@@ -1,0 +1,11 @@
+-------------------------
+# Some ssh/scp examples:
+-------------------------
+
+# connect to blinkenshell.org in port XXXX :
+
+ssh -pXXXX user@ssh.blinkenshell.org
+
+# copy file.png to blinkenshell in dir /home/user/:
+
+scp -P XXXX file.png user@ssh.blinkenshell.org:/home/user/

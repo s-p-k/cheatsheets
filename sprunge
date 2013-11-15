@@ -1,0 +1,2 @@
+# sprunge paste
+cat example.c | curl -F 'sprunge=<-' http://sprunge.us

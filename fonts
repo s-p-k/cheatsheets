@@ -1,0 +1,7 @@
+# To browse the list of fonts in /etc/X11/app-defaults:
+
+fc-list :fontformat=TrueType -f "%{family}\n" | sort -u | less
+
+# set temporarily a font:
+
+xterm -fa 'Luxi Mono' -fs 10 # -fa for the font name, -fs for the size
