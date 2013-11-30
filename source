@@ -1,0 +1,2 @@
+# pipe output of command to stdin (/ded/fd/0). Assuming test.txt contains pwd:
+cat test.txt | source /dev/fd/0
