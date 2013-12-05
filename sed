@@ -14,3 +14,6 @@ echo '3' | sed "s/3/\'3p\'/"
 
 # delete last line from a file
 cat file.txt | sed '$d'
+
+# delete last character
+echo 'lol' | sed '$s/.$//'
