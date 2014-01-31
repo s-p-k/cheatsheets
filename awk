@@ -9,6 +9,9 @@ awk "BEGIN { print \"Don't Panic\" }"
 # awk as wc -l
 awk 'END { print NR }' file.txt
 
+# awk as ls -1
+ls -l | awk '!/total/ { print $9 }'
+
 # search for a string and return the first number of line it occured
 awk '/test/{ print NR; exit }' file.txt
 

@@ -15,7 +15,7 @@ C-u 0 C-l : move the current line to the top of the screen
 
 C-u 8 C-l : move the current line 8 lines after the top of the screen
 
-* Line Movement
+* Line/Column Movement
 ---------------------------------------
 
 C-p : go to previous line
@@ -31,6 +31,10 @@ M-a : go to the beginning of line: if command is repeated, continue to the
 
 M-e : go to the end of the line: if command is repeated, continue to the end of
       the next line
+
+M-g g: go to line:
+
+M-g <TAB>: go to column
 
 * Cursor Movement
 ---------------------------------------
@@ -80,7 +84,11 @@ C-h k C-f: describe key C-f
 
 ** Deleting Words
 
+*** Deleting Lines
 
+C-k : Delete anything after the cursor.
+
+C-u 0 C-k : Delete anything before the cursor.
 
 * Inserting text
 --------------------------------------------------------------------------------
