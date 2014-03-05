@@ -6,3 +6,6 @@ pacman -Qqn
 
 # list package contents
 pacman -Ql assaultcube | less
+
+# (invalid or corrupted package (PGP signature)) error
+pacman-key --refresh-keys && pacman -Syu
