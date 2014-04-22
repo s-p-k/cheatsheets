@@ -7,17 +7,8 @@ git commit -m "msg"
 # create a patch file for the latest changes
 git format-patch -1
 
-# create a new patch file, fixing problems from the previous one
+# change commit message
 git commit --ammend
 
 # to avoid conflicts
 git fetch && git reset --hard origin/master
-
-# after configuring ssh public key, switch to ssh instead of https
-git remote set-url origin git@github.com:user/repo.git
-
-# cancel after adding wrong file with git add
-git reset HEAD wrong_file
-
-# make local an exact of copy of remote repo
-git clean -f
