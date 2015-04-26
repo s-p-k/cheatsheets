@@ -1,0 +1,2 @@
+# count words in pdf file
+pdftotext /path/to/file.pdf - | wc -w
