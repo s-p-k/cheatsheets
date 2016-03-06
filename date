@@ -1,0 +1,16 @@
+# count days from today till date:
+date -d 'today + 95 days'
+
+# count 30 days backwards
+date -d -30days
+
+# count 30 weeks forward
+date -d +30weeks
+
+# find the date between specific days and months
+date -d 'Sep 9 2015 + 9 months'
+
+# find date/time from now
+date -d 'now + 3 hours'
+
+
