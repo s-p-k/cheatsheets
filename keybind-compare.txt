@@ -1,0 +1,5 @@
+compare emacs and vim keybindings
+
+emacs       keystrokes         vim         keystrokes
+
+C-u 0 C-l                      z<enter>    2
