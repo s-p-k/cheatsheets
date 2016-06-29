@@ -1,0 +1,10 @@
+# search for a package in yum
+yum search vim # this searches for vim in the repos
+
+# list all installed packages
+yum list all
+
+# list vim-related installed packages
+yum list all | grep vim
+
+
