@@ -1,0 +1,10 @@
+# request a certificate from puppet agent node on puppet master node or
+# verify that certificate is signed
+puppet agent --no-daemonize --onetime --verbose
+
+# check for certificates in master
+puppet cert list -all
+
+# after using list to see certs, sign the puppet cert
+puppet cert sign ppagent.example.org
+
