@@ -44,6 +44,7 @@ E   :      go to the last char of the current word
 R   :      replace char under cursor
 ~   :      change case of char under cursor
 fc  :      find next occurence of character <c>
+s   :      delete character under cursor and go to insert mode
 
 
 
