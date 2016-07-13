@@ -39,6 +39,11 @@ C-b :      move page up
 C-f :      move page down
 C-o :      move jump to last cursor position
 C-i :      jump to next cursor position
+Ea  :      append text to the end of current word
+E   :      go to the last char of the current word
+R   :      replace char under cursor
+~   :      change case of char under cursor
+fc  :      find next occurence of character <c>
 
 
 
