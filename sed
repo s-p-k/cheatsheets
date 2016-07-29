@@ -1,5 +1,7 @@
 # print 2nd line
 cat file.txt | sed -n '2p'
+or
+sed -e '2q;d'
 
 # print lines 3-5 of a file
 cat file.txt | sed -n '3,5p'
