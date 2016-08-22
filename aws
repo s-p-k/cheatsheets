@@ -1,0 +1,6 @@
+# describe all aws instances
+aws ec2 describe-images
+
+# describe a specific instance by id
+aws ec2 describe-instances --instance-ids [ID]
+
