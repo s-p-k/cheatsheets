@@ -1,0 +1,3 @@
+# print current terraform plan
+terraform plan -var-file <servername>.tfvars
+
