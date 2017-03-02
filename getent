@@ -1,0 +1,6 @@
+# get a list of all passwordless users in the system
+getent shadow | grep '^[^:]*:.\?:' | cut -d: -f1
+
+# the same but with gnu grep
+getent shadow | grep -Po '^[^:]*(?=:.?:)'
+
