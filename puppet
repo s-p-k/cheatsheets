@@ -8,3 +8,28 @@ puppet cert list -all
 # after using list to see certs, sign the puppet cert
 puppet cert sign ppagent.example.org
 
+
+## masterless puppet
+
+# print module path for the current user
+puppet apply --configprint modulepath
+
+# print path to puppet conf for the current user
+puppet apply --configprint config
+
+###################################################
+### hashing passwords for created users via puppet
+/sbin/grub-crypt --sha-512
+
+### then enter that in your class:
+
+class profiles::create_admin {
+  user { 'admin':
+    ensure   => 'present',
+    home     => '/home/admin/',
+    shell    => '/bin/bash',
+    password => 'hash from grub-crypt command in here',
+    comment  => 'user description',
+  }
+}
+#######################################################
